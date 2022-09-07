@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/assets/images/icon/icon_16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/assets/images/icon/icon-192.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="theme-color" content="#0f0f14" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("./serviceworker.js");
+        });
+      }
+    </script>
+    
+    <title>%REACT_APP_NAME%</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
